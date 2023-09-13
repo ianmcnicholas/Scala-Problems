@@ -2,6 +2,7 @@ import org.scalatest.funsuite.AnyFunSuite
 
 object ScalaTestingStyles
 
+//first test
 class CalculatorSuite extends AnyFunSuite {
   val calculator = new Calculator
 
