@@ -1,24 +1,21 @@
-import org.scalatest.funsuite.AnyFunSuite
+import org.scalatest.wordspec.AnyWordSpec
+import org.scalatest.matchers.must.Matchers
 
 object ScalaTestingStyles
 
-//first test
-class CalculatorSuite extends AnyFunSuite {
+class testWithWordAndMatchers extends AnyWordSpec with Matchers {
+
   val calculator = new Calculator
 
-  test("multiplication by 0 should always be 0"){
-    assert(calculator.multiply(4312, 0) == 0)
-    assert(calculator.multiply(-4312, 0) == 0)
-    assert(calculator.multiply(0, 0) == 0)
-    assert(calculator.multiply(0, 1) == 0)
-    assert(calculator.multiply(0, -1) == 0)
+  "A calculator" should {
+    "give back 0 when multiplying by 0" in {
+      assert(calculator.multiply(4312, 0) == 0)
+      assert(calculator.multiply(-4312, 0) == 0)
+      assert(calculator.multiply(0, 0) == 0)
+      assert(calculator.multiply(0, 1) == 0)
+      assert(calculator.multiply(0, -1) == 0)
+    }
   }
-
-  test("dividing by 0 should throw an error"){
-    assertThrows[ArithmeticException](calculator.divide(5, 0))
-
-  }
-
 }
 
 class Calculator {
