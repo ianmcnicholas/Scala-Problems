@@ -7,7 +7,6 @@ import org.scalatest.wordspec.AnyWordSpec
 
 class Problem2Spec extends AnyWordSpec with Matchers {
 
-
   val problem2 = new Problem2
   val listOfIntegers = List(1, 2, 3, 4, 5)
 
