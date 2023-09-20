@@ -11,7 +11,7 @@ class Problem3Spec extends AnyWordSpec with Matchers {
   val K = 3
 
   "Problem 3" should {
-    "return the last-but-one element in a list of integers" in {
+    "return the Kth element in a list of integers" in {
       assert(problem3.returnKthElement(listOfIntegers, K) == 3)
     }
   }
