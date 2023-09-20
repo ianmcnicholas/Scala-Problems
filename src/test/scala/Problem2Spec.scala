@@ -1,10 +1,6 @@
 import org.scalatest.matchers.must.Matchers
 import org.scalatest.wordspec.AnyWordSpec
 
-/**
- * Find the last but one element of a list.
- */
-
 class Problem2Spec extends AnyWordSpec with Matchers {
 
   val problem2 = new Problem2

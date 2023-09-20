@@ -1,6 +1,10 @@
+/**
+ * Find the Kth element of a list.
+ */
+
 class Problem3 {
-  def returnKthElement(list: List[Int], K: Int): Int = {
-    list(K-1)
+  def returnKthElement[A](list: List[A], K: Int): A = {
+    list(K - 1)
   }
 
 
