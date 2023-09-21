@@ -13,12 +13,9 @@ lazy val root = (project in file("."))
   .settings(
     inConfig(CourseTest)(Defaults.testSettings),
     libraryDependencies += scalaTest % Test,
-    libraryDependencies += scalaTest % CourseTest
+    libraryDependencies += scalaTest % CourseTest,
+    libraryDependencies += "org.scalatestplus" %% "mockito-4-11" % "3.2.17.0" % "test"
   )
 
 CourseTest / unmanagedSourceDirectories += baseDirectory.value / "ct"
 
-//libraryDependencies ++= Seq(
-//  "org.scalatest" %% "scalatest" % "3.2.15",
-//  "org.scalatest" %% "scalatest" % "3.2.15" % "test"
-//)
